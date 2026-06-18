@@ -25,12 +25,11 @@ Do not use this skill for a generic brainstorming request. Use it when there is 
 
 ## Analysis workflow
 
-1. Restate the specific decision the user is trying to make about competitor lead angle review.
-2. Inventory the evidence provided and mark missing inputs before judging performance.
-3. Compare surface metrics against downstream business quality for B2B lead generation.
-4. Separate facts, likely causes, hypotheses and approval-required actions.
-5. Score confidence as high, medium or low based on data quality, sample size and source reliability.
-6. Produce the smallest useful next action, not a broad redesign or system rebuild.
+1. List competitor promises, proof, offers, CTAs, pricing cues and audience focus from available ads/pages.
+2. Compare competitor angles with your own ad, page and sales promise.
+3. Identify where competitors win on specificity, proof, speed, risk reversal, category framing or pain intensity.
+4. Separate useful positioning gaps from imitation risks.
+5. Recommend 3 testable lead gen angles with ICP, proof needed and expected lead quality risk.
 
 ## Decision rules
 
@@ -41,9 +40,9 @@ Do not use this skill for a generic brainstorming request. Use it when there is 
 
 ## Output format
 
-| Finding | Evidence | Why it matters | Recommended action | Confidence |
+| Finding | Evidence | Lead quality impact | Recommended action | Confidence |
 |---|---|---|---|---|
-| Short diagnostic claim | Data, quote, screenshot, export or missing-data note | Business impact or risk | Specific next step and owner | High / Medium / Low |
+| Specific diagnostic claim | Data, screenshot, report, note or missing-data marker | Business or signal consequence | Smallest useful next step and owner | High / Medium / Low |
 
 End with:
 

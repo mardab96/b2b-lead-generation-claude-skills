@@ -25,12 +25,12 @@ Do not use this skill for a generic brainstorming request. Use it when there is 
 
 ## Analysis workflow
 
-1. Map the asset to buyer stage: problem-aware, solution-aware, vendor-aware or implementation-ready.
-2. Check if the promise attracts the target buyer or broad low-intent researchers.
-3. Identify the next commercial step the asset naturally earns: reply, demo, audit, trial, call or nurture.
-4. Flag missing proof, weak specificity, generic AI content risk and follow-up gaps.
-5. Score confidence as high, medium or low based on data quality, sample size and source reliability.
-6. Produce the smallest useful next action, not a broad redesign or system rebuild.
+1. Classify the asset by buyer stage: problem-aware, solution-aware, vendor-aware or implementation-ready.
+2. Compare the promised outcome with ICP pain intensity, buying urgency and the next commercial step.
+3. Check whether the asset attracts budget owners, operators, researchers, students or low-intent downloaders.
+4. Review the asset title, landing page, form, thank-you step and follow-up for one coherent promise.
+5. Score qualification strength using specificity, business pain, implementation effort, proof and follow-up relevance.
+6. Recommend keep, sharpen, reposition, gate differently, pair with a stronger CTA or retire.
 
 ## Decision rules
 
@@ -41,9 +41,9 @@ Do not use this skill for a generic brainstorming request. Use it when there is 
 
 ## Output format
 
-| Finding | Evidence | Why it matters | Recommended action | Confidence |
+| Finding | Evidence | Lead quality impact | Recommended action | Confidence |
 |---|---|---|---|---|
-| Short diagnostic claim | Data, quote, screenshot, export or missing-data note | Business impact or risk | Specific next step and owner | High / Medium / Low |
+| Specific diagnostic claim | Data, screenshot, report, note or missing-data marker | Business or signal consequence | Smallest useful next step and owner | High / Medium / Low |
 
 End with:
 

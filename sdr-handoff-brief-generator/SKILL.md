@@ -25,12 +25,11 @@ Do not use this skill for a generic brainstorming request. Use it when there is 
 
 ## Analysis workflow
 
-1. Restate the specific decision the user is trying to make about sdr handoff brief generator.
-2. Inventory the evidence provided and mark missing inputs before judging performance.
-3. Compare surface metrics against downstream business quality for B2B lead generation.
-4. Separate facts, likely causes, hypotheses and approval-required actions.
-5. Score confidence as high, medium or low based on data quality, sample size and source reliability.
-6. Produce the smallest useful next action, not a broad redesign or system rebuild.
+1. Extract source, offer, asset, ad promise, form answers, CRM fields and recent behavior for the lead.
+2. Summarize likely pain, buyer stage, role, urgency and fit in plain language.
+3. List likely objections or qualification gaps the SDR should verify.
+4. Create 3 opening questions tied to the source and asset, not generic discovery.
+5. Return a concise handoff brief that sales can use without reading the whole funnel history.
 
 ## Decision rules
 
@@ -41,9 +40,9 @@ Do not use this skill for a generic brainstorming request. Use it when there is 
 
 ## Output format
 
-| Finding | Evidence | Why it matters | Recommended action | Confidence |
+| Finding | Evidence | Lead quality impact | Recommended action | Confidence |
 |---|---|---|---|---|
-| Short diagnostic claim | Data, quote, screenshot, export or missing-data note | Business impact or risk | Specific next step and owner | High / Medium / Low |
+| Specific diagnostic claim | Data, screenshot, report, note or missing-data marker | Business or signal consequence | Smallest useful next step and owner | High / Medium / Low |
 
 End with:
 
