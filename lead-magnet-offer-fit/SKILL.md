@@ -1,6 +1,6 @@
 ---
 name: lead-magnet-offer-fit
-description: Reviews a proposed or existing B2B lead magnet for buyer-stage fit, pain relevance, qualification strength and follow-up value. Use when creating, choosing, improving or diagnosing a free asset, gated resource, checklist, guide, template or webinar for lead generation.
+description: Reviews a proposed or existing B2B lead magnet for buyer-stage fit, pain relevance, qualification strength and follow-up value. Use when B2B ads, landing pages, CRM data or sales notes show a lead quality problem that needs a decision before campaign, scoring or follow-up changes.
 ---
 
 # Lead Magnet Offer Fit
@@ -9,11 +9,11 @@ Use the shared quality bar in `../references/output-standard.md` and `../referen
 
 ## Use this skill when
 
-- the user is creating a lead magnet and asks whether the offer is strong enough.
-- a lead magnet gets downloads but weak leads, low reply quality or poor sales acceptance.
-- the user needs to match an asset to ICP, buying stage, pain intensity and next-step intent.
+- the user shares lead source, CRM stage, sales note, form, landing page or campaign data tied to lead magnet offer fit.
+- the next decision could change targeting, qualification, scoring, follow-up, sales handoff or budget.
+- lead volume looks acceptable but SQL, opportunity, closed-won, rejection or response-speed data raises doubt.
 
-Do not use this skill for a generic brainstorming request. Use it when there is a concrete asset, setup, report, page, funnel, tracking issue or decision to diagnose.
+Do not use this skill for broad lead-generation advice without source, CRM, sales or qualification evidence. Use it when a real B2B lead quality decision is on the table.
 
 ## Required input
 
@@ -53,9 +53,9 @@ End with:
 
 ## Practical example
 
-User: "Can you check this lead magnet offer fit before we make a change?"
+User: "Here are CRM stages, source data and sales notes for lead magnet offer fit. What should we change before the next campaign move?"
 
-Assistant should: ask for or use the relevant exports/screenshots/notes, run the workflow above, produce a ranked diagnostic table, and stop at approval-ready recommendations.
+Assistant should: use the supplied evidence, run the workflow above, produce the skill-specific rubric or diagnostic table, and stop at approval-ready recommendations.
 
 ## Guardrails
 

@@ -1,6 +1,6 @@
 ---
 name: icp-reality-check
-description: Compares your stated ICP against actual closed-won and closed-lost customers. Use when the user is diagnosing, planning, reviewing or deciding next actions for icp reality check in B2B lead generation.
+description: Compares your stated ICP against actual closed-won and closed-lost customers. Use when B2B ads, landing pages, CRM data or sales notes show a lead quality problem that needs a decision before campaign, scoring or follow-up changes.
 ---
 
 # Icp Reality Check
@@ -9,11 +9,11 @@ Use the shared quality bar in `../references/output-standard.md` and `../referen
 
 ## Use this skill when
 
-- the user asks for help with icp reality check in B2B lead generation.
-- the user provides data, screenshots, exports, notes or a URL related to icp reality check.
-- the user needs an approval-ready diagnosis before changing campaigns, pages, tracking, CRM or follow-up.
+- the user shares lead source, CRM stage, sales note, form, landing page or campaign data tied to icp reality check.
+- the next decision could change targeting, qualification, scoring, follow-up, sales handoff or budget.
+- lead volume looks acceptable but SQL, opportunity, closed-won, rejection or response-speed data raises doubt.
 
-Do not use this skill for a generic brainstorming request. Use it when there is a concrete asset, setup, report, page, funnel, tracking issue or decision to diagnose.
+Do not use this skill for broad lead-generation advice without source, CRM, sales or qualification evidence. Use it when a real B2B lead quality decision is on the table.
 
 ## Required input
 
@@ -31,6 +31,20 @@ Do not use this skill for a generic brainstorming request. Use it when there is 
 4. Find ICP blind spots: segments with low lead volume but high sales acceptance or deal value.
 5. Separate targeting problems from offer, page, qualification and follow-up problems before recommending a change.
 6. Return an ICP action: keep, narrow, split into segments, exclude, or collect more data.
+
+## Diagnostic rubric
+
+Use this table when the user provides CRM or sales outcome data:
+
+| Segment | Lead volume | SQL rate | Opportunity rate | Closed-won rate | Rejection pattern | ICP verdict |
+|---|---:|---:|---:|---:|---|---|
+| Company size / role / industry / use case | Count and source mix | Percent or missing-data marker | Percent or missing-data marker | Percent or missing-data marker | Sales reason, no-show pattern or lost reason | Keep / narrow / split / exclude / collect more data |
+
+Then summarize:
+
+- ICP drift: segments that create leads but weak pipeline.
+- ICP blind spot: segments with low volume but strong downstream quality.
+- ICP change: the one targeting or qualification change worth testing first.
 
 ## Decision rules
 
@@ -53,9 +67,9 @@ End with:
 
 ## Practical example
 
-User: "Can you check this icp reality check before we make a change?"
+User: "Here are CRM stages, source data and sales notes for icp reality check. What should we change before the next campaign move?"
 
-Assistant should: ask for or use the relevant exports/screenshots/notes, run the workflow above, produce a ranked diagnostic table, and stop at approval-ready recommendations.
+Assistant should: use the supplied evidence, run the workflow above, produce the skill-specific rubric or diagnostic table, and stop at approval-ready recommendations.
 
 ## Guardrails
 

@@ -1,6 +1,6 @@
 ---
 name: lead-scoring-sanity-check
-description: Tests B2B lead scoring rules against real CRM outcomes, sales feedback, qualification stages and revenue signals. Use when scores look high but SQL, opportunity or closed-won quality is weak.
+description: Tests B2B lead scoring rules against real CRM outcomes, sales feedback, qualification stages and revenue signals. Use when B2B ads, landing pages, CRM data or sales notes show a lead quality problem that needs a decision before campaign, scoring or follow-up changes.
 ---
 
 # Lead Scoring Sanity Check
@@ -9,11 +9,11 @@ Use the shared quality bar in `../references/output-standard.md` and `../referen
 
 ## Use this skill when
 
-- the user has lead scores, MQL rules or qualification rules and doubts their quality.
-- high-scoring leads are rejected by sales or do not become opportunities.
-- the team needs to distinguish engagement bias from revenue likelihood.
+- the user shares lead source, CRM stage, sales note, form, landing page or campaign data tied to lead scoring sanity check.
+- the next decision could change targeting, qualification, scoring, follow-up, sales handoff or budget.
+- lead volume looks acceptable but SQL, opportunity, closed-won, rejection or response-speed data raises doubt.
 
-Do not use this skill for a generic brainstorming request. Use it when there is a concrete asset, setup, report, page, funnel, tracking issue or decision to diagnose.
+Do not use this skill for broad lead-generation advice without source, CRM, sales or qualification evidence. Use it when a real B2B lead quality decision is on the table.
 
 ## Required input
 
@@ -30,6 +30,20 @@ Do not use this skill for a generic brainstorming request. Use it when there is 
 3. Calculate or estimate false positives, false negatives, source bias, firmographic bias and activity bias.
 4. Use sales rejection reasons to identify misleading scoring signals.
 5. Recommend keep, recalibrate, split scoring by segment, remove weak factors or add missing revenue-linked signals.
+
+## Diagnostic rubric
+
+Use this table when the user provides scoring and CRM outcome data:
+
+| Score bucket | Lead volume | MQL rate | SQL rate | Opportunity rate | Closed-won rate | Rejection pattern | Scoring verdict |
+|---|---:|---:|---:|---:|---:|---|---|
+| Score range or lifecycle tier | Count and source mix | Percent or missing-data marker | Percent or missing-data marker | Percent or missing-data marker | Percent or missing-data marker | Common sales reason or disqualification reason | Keep / lower / raise / split / remove factor |
+
+Then call out:
+
+- False positives: high-score leads rejected by sales or stuck before opportunity.
+- False negatives: low-score leads that become SQLs, opportunities or closed-won.
+- Bias source: activity, source, firmographic, title, company size or form type.
 
 ## Decision rules
 
@@ -52,9 +66,9 @@ End with:
 
 ## Practical example
 
-User: "Can you check this lead scoring sanity check before we make a change?"
+User: "Here are CRM stages, source data and sales notes for lead scoring sanity check. What should we change before the next campaign move?"
 
-Assistant should: ask for or use the relevant exports/screenshots/notes, run the workflow above, produce a ranked diagnostic table, and stop at approval-ready recommendations.
+Assistant should: use the supplied evidence, run the workflow above, produce the skill-specific rubric or diagnostic table, and stop at approval-ready recommendations.
 
 ## Guardrails
 

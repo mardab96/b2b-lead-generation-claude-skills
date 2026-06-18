@@ -1,6 +1,6 @@
 ---
 name: ad-to-landing-promise-match
-description: Verifies that ads, landing page and CTA promise the same thing. Use when the user is diagnosing, planning, reviewing or deciding next actions for ad to landing promise match in B2B lead generation.
+description: Verifies that ads, landing page and CTA promise the same thing. Use when B2B ads, landing pages, CRM data or sales notes show a lead quality problem that needs a decision before campaign, scoring or follow-up changes.
 ---
 
 # Ad To Landing Promise Match
@@ -9,11 +9,11 @@ Use the shared quality bar in `../references/output-standard.md` and `../referen
 
 ## Use this skill when
 
-- the user asks for help with ad to landing promise match in B2B lead generation.
-- the user provides data, screenshots, exports, notes or a URL related to ad to landing promise match.
-- the user needs an approval-ready diagnosis before changing campaigns, pages, tracking, CRM or follow-up.
+- the user shares lead source, CRM stage, sales note, form, landing page or campaign data tied to ad to landing promise match.
+- the next decision could change targeting, qualification, scoring, follow-up, sales handoff or budget.
+- lead volume looks acceptable but SQL, opportunity, closed-won, rejection or response-speed data raises doubt.
 
-Do not use this skill for a generic brainstorming request. Use it when there is a concrete asset, setup, report, page, funnel, tracking issue or decision to diagnose.
+Do not use this skill for broad lead-generation advice without source, CRM, sales or qualification evidence. Use it when a real B2B lead quality decision is on the table.
 
 ## Required input
 
@@ -52,9 +52,9 @@ End with:
 
 ## Practical example
 
-User: "Can you check this ad to landing promise match before we make a change?"
+User: "Here are CRM stages, source data and sales notes for ad to landing promise match. What should we change before the next campaign move?"
 
-Assistant should: ask for or use the relevant exports/screenshots/notes, run the workflow above, produce a ranked diagnostic table, and stop at approval-ready recommendations.
+Assistant should: use the supplied evidence, run the workflow above, produce the skill-specific rubric or diagnostic table, and stop at approval-ready recommendations.
 
 ## Guardrails
 
