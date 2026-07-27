@@ -89,7 +89,6 @@ def check_dkim(record):
         out["issues"].append(("critical", "Empty public key, which means the selector is revoked."))
         return out
     # base64 length maps to key size closely enough to flag a 1024-bit key
-    approx_bits = int(len(key) * 6 / 8 * 8 / 1.16) if key else 0
     out["key_bits"] = "2048 or higher" if len(key) > 250 else "likely 1024"
     if len(key) <= 250:
         out["issues"].append(("warning", "Key looks like 1024-bit. 2048 is the current norm."))
@@ -113,7 +112,14 @@ def check_dmarc(record):
     pct = re.search(r"\bpct=(\d+)", record)
     if pct:
         out["pct"] = int(pct.group(1))
-        if out["pct"] < 100:
+        if out["pct"] == 0:
+            # pct=0 on p=reject enforces nothing at all, which is p=none wearing
+            # a stricter label. Reporting it as informational let a domain read
+            # as authenticated while its enforcement was switched off.
+            out["issues"].append(("warning",
+                                  "pct=0 means the policy applies to no mail at all. "
+                                  "Whatever p= says, nothing is being enforced."))
+        elif out["pct"] < 100:
             out["issues"].append(("info", "Policy applies to %s%% of mail." % out["pct"]))
     if "rua=" not in record.lower():
         out["issues"].append(("warning", "No rua= address, so aggregate reports go nowhere and nobody will notice a problem."))
@@ -153,9 +159,10 @@ def main():
     result["warning_count"] = sum(1 for _, sev, _ in all_issues if sev == "warning")
 
     # An authenticated domain needs DMARC to pass on an aligned SPF or DKIM.
+    enforcing = result["dmarc"]["pct"] > 0
     result["authenticated"] = (
         result["spf"]["present"] and result["dkim"]["present"] and result["dmarc"]["present"]
-        and result["critical_count"] == 0)
+        and result["critical_count"] == 0 and enforcing)
 
     if args.json:
         print(json.dumps(result, indent=2))

@@ -9,7 +9,7 @@ description: Produces a one-page brief before a sales call: who they are, what t
 
 There is a call soon and nobody has read anything about the company.
 
-This is not a research project. It is the twenty minutes before a call, and the goal is to walk in knowing three things you did not know, not forty things you will not remember.
+You have twenty minutes before a call. The goal is to walk in knowing three things you did not know, rather than forty you will not remember.
 
 The output is deliberately short. A brief nobody reads before the call is worth less than no brief, because it also consumed the prep time.
 
@@ -34,8 +34,7 @@ Useful if it exists, skipped without complaint if not:
 3. Find at most three specifics worth mentioning. More than three will not survive the first five minutes of an actual conversation.
 4. Write the questions you cannot answer from research. The point of the call is what the website does not say, so a brief that answers everything has prepared the wrong things.
 5. Name the likely objection for this profile, and the honest response to it.
-6. Write the disqualifiers explicitly. Knowing what makes this a bad fit before the call is what stops a polite hour becoming a three-month pipeline ghost.
-7. Decide what a good outcome is. Not "a great conversation", a specific next step.
+6. Write the disqualifiers explicitly, then decide what a good outcome is. Not "a great conversation", a specific next step.
 
 ## Decision rules
 

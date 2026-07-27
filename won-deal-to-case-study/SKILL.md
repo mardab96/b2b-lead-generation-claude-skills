@@ -33,7 +33,9 @@ Strongly improves the result:
 4. Reconstruct what changed, in their operational terms rather than in product features.
 5. Mark every gap where the story needs the customer's own words, and be specific about which sentence you are asking them for.
 6. Draft the case study with the gaps visible as placeholders, so nobody accidentally publishes an inference as a quote.
-7. Write the permission email. It is short, it says what you will publish, it offers approval before anything goes live, and it makes declining easy.
+7. Decide what the story is actually about before writing a word of it. A case study about your product is a brochure; a case study about a company that had a problem and now does not is something a stranger reads to the end.
+8. Write the permission email. It is short, it says what you will publish, it offers approval before anything goes live, and it makes declining easy.
+9. Note who at your end owns chasing the approval, because this is the step where case studies die.
 
 ## Decision rules
 

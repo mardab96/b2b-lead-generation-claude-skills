@@ -22,7 +22,7 @@ Once delivery is not the issue, the cause is almost always one of four things, a
 Better with:
 
 - reply rate, positive reply rate and unsubscribe rate per step
-- open rate, with the caveat that it is a soft signal now
+- open rate, treated as a soft signal because Apple Mail Privacy Protection fires the pixel on delivery
 - examples of the replies, especially negative ones
 - what you are actually selling and the deal size
 

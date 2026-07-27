@@ -28,17 +28,18 @@ Useful:
 
 ## Analysis workflow
 
-1. Map who spoke and for how long. A discovery call where the seller speaks most of the time did not discover anything, and this single measure predicts more than the content usually does.
+1. Map who spoke and for how long. A discovery call where the seller speaks most of the time did not discover much, whatever else it contained. Treat the ratio as a direction rather than a threshold: the vendors who publish research on this from large call corpora put the healthy band well below half seller talk, and their numbers are theirs, not measured here. What matters for one call is whether the buyer did most of the talking.
 2. Check whether the current cost of the problem was ever established in their terms. Not whether the problem was named, but whether anyone quantified what it costs them to keep living with it. Without that, there is no case for change and no urgency later.
 3. Check for a real timeline and what creates it. "Sometime this quarter" is not a timeline. Something has to force the date, and if nothing does, the deal will slip indefinitely regardless of enthusiasm.
 4. Check authority without the interrogation. Look for whether anyone established how a decision like this gets made there, who else is involved, and what the approval path looks like.
 5. Check the incumbent. What are they doing today, what does it cost, and what would have to happen to that arrangement. Deals are lost to the status quo far more often than to competitors.
 6. Find the moment a buying signal appeared and was not followed. Transcripts almost always contain one: a question about implementation, a mention of a deadline, a reference to a colleague who cares. These are where the deal was available and the conversation moved on.
-7. Write the questions that are still open, in the order they should be asked next.
+7. Check whether anyone other than the person on the call was ever mentioned as needing to be involved. A deal that lives with one contact is one holiday away from silence, and that is visible in the transcript long before it becomes a problem.
+8. Write the questions that are still open, in the order they should be asked next.
 
 ## Decision rules
 
-- Talk ratio above roughly two thirds seller is a finding on its own, whatever else the call contained.
+- A seller-dominant call is a finding on its own. Do not attach a hard percentage to it here: the right band varies with call type, deal complexity and length, and a borrowed threshold applied to a demo-heavy call generates false alarms. Report the ratio, say who dominated, and let the manager judge.
 - An unquantified problem is the most common gap and the most expensive one. Prioritise it over the others.
 - Do not score the call against a framework for its own sake. The output is which questions are still open, not a grade.
 - If the economic buyer was absent and nobody discussed how to reach them, that is the top finding regardless of how the call felt.
@@ -48,7 +49,7 @@ Useful:
 
 ### Call shape
 
-Talk ratio, call length, who was present, and what the agreed next step was.
+Talk ratio, call length, who was present, and what the agreed next step was. State the ratio as an observation, not a grade.
 
 ### What was established
 

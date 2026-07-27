@@ -29,7 +29,7 @@ Better with:
 ## Analysis workflow
 
 1. Run `../scripts/pipeline_hygiene.py` over the export. Counting stale deals, measuring stage ageing and comparing close dates against the sales cycle are arithmetic, and doing it by eye across a few hundred deals produces numbers that feel right and are not.
-2. Age every deal against the typical sales cycle for its stage. A deal that has been in one stage for three times the normal duration is not a slow deal, it is an unclosed one.
+2. Age every deal against the typical sales cycle for its stage. A deal sitting in one stage for several times the normal duration has usually stopped moving rather than slowed down. Pick the multiplier from this store's own cycle rather than a rule of thumb.
 3. Find deals with no activity inside a reasonable window. No activity is the single strongest predictor of a deal that will never close, and it is usually visible months before anyone acts on it.
 4. Check the close dates. Dates in the past, dates that have been pushed more than twice, and dates that cluster suspiciously on the last day of a quarter each tell a different story about how the forecast is being constructed.
 5. Check stage definitions against stage behaviour. If deals routinely skip a stage or sit in one for a day, the stage is not doing any work and the pipeline reporting inherits that.

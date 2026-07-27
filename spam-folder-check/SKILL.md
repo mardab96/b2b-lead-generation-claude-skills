@@ -33,13 +33,14 @@ If someone hands over only a screenshot of a sequence dashboard, say what is mis
 
 ## Analysis workflow
 
-1. Read the authentication trio and say plainly which of the three is missing, misconfigured or merely present but permissive. SPF that ends in `~all` with eleven includes, DKIM that does not verify, and DMARC set to `p=none` are three different problems with three different fixes.
-2. Check the domain age and reputation posture. A domain that started sending in volume three weeks after registration behaves differently from one sending for four years, and the fix is patience, not configuration.
-3. Compare volume per mailbox against a conservative ceiling. Most cold outbound problems are volume problems wearing a copy problem's clothes.
-4. Read the bounce rate as a list-quality signal first and a reputation signal second. A hard bounce rate above a few percent is a list that was never verified, and it damages the domain for months after the campaign ends.
-5. Read the complaint rate as the strongest available proxy for whether recipients consider this spam. It matters more than any other number here.
-6. Separate what is broken from what is merely unproven. Open rates cannot confirm delivery reliably now that mail providers pre-fetch images, so do not build a delivery conclusion on them.
-7. Name the one fix that comes first, and say what it will not fix.
+1. Run `../scripts/email_auth_check.py` over the records. Counting SPF lookups against the limit of ten, reading the qualifier on `all`, spotting DKIM test mode and telling `p=none` from `p=reject` are mechanical, and eyeballing them is how a domain passes an inspection and still lands in spam. Pass the records with `--spf`, `--dkim` and `--dmarc`, or a file with one per line.
+2. Read what it returns and say plainly which of the three is missing, misconfigured or merely present but permissive. SPF that ends in `~all` with eleven includes, DKIM that does not verify, and DMARC set to `p=none` are three different problems with three different fixes.
+3. Check the domain age and reputation posture. A domain that started sending in volume three weeks after registration behaves differently from one sending for four years, and the fix is patience, not configuration.
+4. Compare volume per mailbox against a conservative ceiling. Most cold outbound problems are volume problems wearing a copy problem's clothes.
+5. Read the bounce rate as a list-quality signal first and a reputation signal second. A hard bounce rate above a few percent is a list that was never verified, and it damages the domain for months after the campaign ends.
+6. Read the complaint rate as the strongest available proxy for whether recipients consider this spam. It matters more than any other number here.
+7. Separate what is broken from what is merely unproven. Open rates cannot confirm delivery. Apple Mail Privacy Protection, on by default since 2021, loads the tracking pixel on delivery whether or not anyone reads the message, so on an Apple-heavy list the number is inflated by an unknown amount. Do not build a delivery conclusion on it.
+8. Name the one fix that comes first, and say what it will not fix.
 
 ## Decision rules
 

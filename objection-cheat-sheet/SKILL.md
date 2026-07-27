@@ -43,7 +43,7 @@ Better with:
 - Every response must trace to something a real buyer said. An answer with no evidence behind it goes in marked as untested.
 - Do not write a rebuttal for an objection that is true. If the product genuinely does not do the thing, the sheet says so and says what to offer instead.
 - Rank by frequency, not by how uncomfortable each one feels.
-- If an objection consistently appears before a demo, it is a positioning problem and belongs upstream, not on a cheat sheet.
+- An objection that consistently appears before a demo belongs upstream with positioning, and a cheat sheet will not fix it.
 - Never manufacture social proof to answer an objection. A named customer who did not consent is a legal problem, and an invented one is worse.
 
 ## Output format

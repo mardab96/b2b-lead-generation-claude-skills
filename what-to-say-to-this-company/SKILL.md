@@ -42,7 +42,7 @@ Anything else that is genuinely available helps and none of it is mandatory:
 - Observable beats clever. A boring true fact about their business outperforms a smart guess about their strategy.
 - Never invent a trigger event. Fabricating a funding round, a hire or a launch is the fastest way to lose an account permanently, and the buyer always knows.
 - If the research turns up nothing usable, say so. "No specific angle available, send the short version" is a valid and useful answer.
-- Congratulating someone on something public is not an angle. It is a subject line pretending to be one.
+- Congratulating someone on something public gives you a subject line and nothing to say after it.
 
 ## Output format
 
