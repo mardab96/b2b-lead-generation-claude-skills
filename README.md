@@ -1,10 +1,16 @@
-# 20 Claude Skills for B2B Lead Generation
+# 30 Claude Skills for B2B Lead Generation
 
-A pack of 20 production-ready Claude Skills for B2B lead generation: targeting, landing pages, lead quality, CRM feedback, follow-up and sales handoff.
+A pack of 30 production-ready Claude Skills for B2B lead generation.
+
+Skills 1 to 20 cover the leads that come to you: targeting, landing pages, lead quality, CRM feedback and sales handoff. They assume a form gets filled in.
+
+Skills 21 to 30 cover the week when it does not. Going out to accounts yourself, getting the email delivered, preparing for the call, and dealing with what happens after it: the silence, the same three objections, the pipeline that stopped resembling reality.
 
 Each skill is a self-contained `SKILL.md` with explicit triggers, required inputs, analysis workflow, decision rules, a practical example, output format, and guardrails. Drop them into Claude Code and they activate automatically when their use case matches the conversation.
 
 ## What is inside
+
+### Inbound and paid: the leads that come to you (1-20)
 
 | # | Skill | Folder | Purpose |
 |---|---|---|---|
@@ -29,9 +35,37 @@ Each skill is a self-contained `SKILL.md` with explicit triggers, required input
 | 19 | Weekly B2b Lead Gen Readout | `weekly-b2b-lead-gen-readout` | Summarizes facts, hypotheses, next actions and approvals for the week. |
 | 20 | Scale Readiness Check Lead Gen | `scale-readiness-check-lead-gen` | Decides if you should add budget or fix qualification and follow-up first. |
 
+### Outbound and the sales side: the week you go out yourself (21-30)
+
+| # | Skill | Folder | Purpose |
+|---|---|---|---|
+| 21 | Spam Folder Check | `spam-folder-check` | Checks whether your cold emails are reaching inboxes at all, from SPF, DKIM, DMARC and sending posture. |
+| 22 | What to Say to This Company | `what-to-say-to-this-company` | Turns one target account into one specific opening angle, or says honestly that there is none. |
+| 23 | Meeting Prep in Five Minutes | `meeting-prep-five-minutes` | One page before a call: who they are, what to ask, what would disqualify them. |
+| 24 | Ghosted After the Demo | `ghosted-after-the-demo` | Works out why a good call went silent, and writes the message that might restart it. |
+| 25 | Write the Follow-Up | `write-the-follow-up` | The next email, built around new information rather than checking in. |
+| 26 | Objection Cheat Sheet | `objection-cheat-sheet` | One page of objections and answers, built from your own lost deals. |
+| 27 | Won Deal to Case Study | `won-deal-to-case-study` | Turns a closed-won deal into a draft case study plus the permission email. |
+| 28 | Cold Outbound Sequence Review | `cold-outbound-sequence-review` | Says which of list, opener, ask or cadence is killing the sequence. |
+| 29 | Discovery Call Gap Analysis | `discovery-call-gap-analysis` | Reads a transcript and finds the question that was never asked. |
+| 30 | Pipeline Hygiene Audit | `pipeline-hygiene-audit` | Separates defensible pipeline from decoration before the forecast conversation. |
+
+## Start here
+
+Most of the second ten need nothing exported. You paste an email, a transcript or a company name and get an answer.
+
+| What you have | Run |
+|---|---|
+| A call in twenty minutes | Meeting Prep in Five Minutes |
+| An account and no idea what to write | What to Say to This Company |
+| A deal that went quiet | Ghosted After the Demo |
+| A sequence with no replies | Spam Folder Check, then Cold Outbound Sequence Review |
+| A CRM export and a forecast due | Pipeline Hygiene Audit |
+| A happy customer and no proof | Won Deal to Case Study |
+
 ## How to install
 
-### Option A — Claude Code (recommended)
+### Option A: Claude Code (recommended)
 
 1. Clone or download this repository.
 2. Copy the skill folders into your project's `.claude/skills/` directory, or into the user-level skills directory at `~/.claude/skills/`.
@@ -39,10 +73,14 @@ Each skill is a self-contained `SKILL.md` with explicit triggers, required input
 
 ```bash
 git clone https://github.com/mardab96/b2b-lead-generation-claude-skills.git
-cp -r b2b-lead-generation-claude-skills/* ~/.claude/skills/
+mkdir -p ~/.claude/skills
+cp -r b2b-lead-generation-claude-skills/*-* \
+      b2b-lead-generation-claude-skills/scripts \
+      b2b-lead-generation-claude-skills/references \
+      ~/.claude/skills/
 ```
 
-### Option B — Other Claude environments
+### Option B: Other Claude environments
 
 The skills are plain Markdown with YAML frontmatter and work anywhere Claude can read files. Paste the relevant `SKILL.md` content into context when you want to use it.
 
@@ -103,4 +141,4 @@ Use [`evals/review-checklist.md`](evals/review-checklist.md) for the next manual
 
 Free to use, modify, and redistribute for personal and commercial work. If you ship something built on top of these skills, a credit is appreciated but not required.
 
-Built and maintained by [AdLume](https://adlume.co) — performance marketing infrastructure for AI-native operators.
+Built and maintained by [AdLume](https://adlume.co): performance marketing infrastructure for AI-native operators.
