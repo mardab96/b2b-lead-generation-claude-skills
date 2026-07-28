@@ -1,6 +1,6 @@
 ---
 name: competitor-lead-angle-review
-description: Reverse-engineers competitor angles you are losing to. Use when B2B ads, landing pages, CRM data or sales notes show a lead quality problem that needs a decision before campaign, scoring or follow-up changes.
+description: Reverse-engineers competitor angles you are losing to. Use when a competitor keeps winning the same deals, or when your angle stopped landing and nobody can say what changed.
 ---
 
 # Competitor Lead Angle Review
@@ -54,7 +54,7 @@ End with:
 
 User: "Here are CRM stages, source data and sales notes for competitor lead angle review. What should we change before the next campaign move?"
 
-Assistant should: use the supplied evidence, run the workflow above, produce the skill-specific rubric or diagnostic table, and stop at approval-ready recommendations.
+Assistant should: name the angle each competitor is winning on, say which one you cannot credibly copy, and stop at one positioning move to test.
 
 ## Guardrails
 

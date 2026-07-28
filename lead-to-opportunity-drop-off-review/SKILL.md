@@ -1,6 +1,6 @@
 ---
 name: lead-to-opportunity-drop-off-review
-description: Finds where qualified leads stall before becoming pipeline. Use when B2B ads, landing pages, CRM data or sales notes show a lead quality problem that needs a decision before campaign, scoring or follow-up changes.
+description: Finds where qualified leads stall before becoming pipeline. Use when leads look healthy but pipeline does not grow, or when the same stage keeps swallowing deals.
 ---
 
 # Lead To Opportunity Drop Off Review
@@ -54,7 +54,7 @@ End with:
 
 User: "Here are CRM stages, source data and sales notes for lead to opportunity drop off review. What should we change before the next campaign move?"
 
-Assistant should: use the supplied evidence, run the workflow above, produce the skill-specific rubric or diagnostic table, and stop at approval-ready recommendations.
+Assistant should: locate the stage where qualified leads stall, separate a process cause from a fit cause, and stop at one fix per stage.
 
 ## Guardrails
 

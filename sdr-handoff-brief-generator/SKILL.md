@@ -1,6 +1,6 @@
 ---
 name: sdr-handoff-brief-generator
-description: Produces context for sales: source, intent signals, likely objections, next question. Use when B2B ads, landing pages, CRM data or sales notes show a lead quality problem that needs a decision before campaign, scoring or follow-up changes.
+description: Produces context for sales: source, intent signals, likely objections, next question. Use before passing a lead to sales, or when reps start calls without knowing where the lead came from.
 ---
 
 # SDR Handoff Brief Generator
@@ -54,7 +54,7 @@ End with:
 
 User: "Here are CRM stages, source data and sales notes for sdr handoff brief generator. What should we change before the next campaign move?"
 
-Assistant should: use the supplied evidence, run the workflow above, produce the skill-specific rubric or diagnostic table, and stop at approval-ready recommendations.
+Assistant should: assemble source, intent signals, likely objections and the opening question into one brief a rep can read before dialling.
 
 ## Guardrails
 

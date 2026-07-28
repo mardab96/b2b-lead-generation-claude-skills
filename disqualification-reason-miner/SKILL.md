@@ -1,6 +1,6 @@
 ---
 name: disqualification-reason-miner
-description: Extracts why sales rejects leads and maps it back to targeting or creative. Use when B2B ads, landing pages, CRM data or sales notes show a lead quality problem that needs a decision before campaign, scoring or follow-up changes.
+description: Extracts why sales rejects leads and maps it back to targeting or creative. Use when sales rejects most of what marketing sends, or when nobody can name why the leads are wrong.
 ---
 
 # Disqualification Reason Miner
@@ -54,7 +54,7 @@ End with:
 
 User: "Here are CRM stages, source data and sales notes for disqualification reason miner. What should we change before the next campaign move?"
 
-Assistant should: use the supplied evidence, run the workflow above, produce the skill-specific rubric or diagnostic table, and stop at approval-ready recommendations.
+Assistant should: cluster the rejection reasons, trace each cluster back to targeting, creative or form, and stop at the two upstream fixes with the widest reach.
 
 ## Guardrails
 

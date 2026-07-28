@@ -1,6 +1,6 @@
 ---
 name: meta-ads-lead-quality-audit
-description: Reviews Meta lead forms and ads for qualification strength and signal fit. Use when B2B ads, landing pages, CRM data or sales notes show a lead quality problem that needs a decision before campaign, scoring or follow-up changes.
+description: Reviews Meta lead forms and ads for qualification strength and signal fit. Use when Meta lead forms deliver cheap volume that sales cannot use, or before turning on instant forms.
 ---
 
 # Meta Ads Lead Quality Audit
@@ -54,7 +54,7 @@ End with:
 
 User: "Here are CRM stages, source data and sales notes for meta ads lead quality audit. What should we change before the next campaign move?"
 
-Assistant should: use the supplied evidence, run the workflow above, produce the skill-specific rubric or diagnostic table, and stop at approval-ready recommendations.
+Assistant should: judge the lead form and the ad on qualification strength, and stop at form and creative changes the owner can approve.
 
 ## Guardrails
 

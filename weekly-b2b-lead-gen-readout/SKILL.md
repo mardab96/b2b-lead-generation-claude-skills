@@ -1,6 +1,6 @@
 ---
 name: weekly-b2b-lead-gen-readout
-description: Summarizes facts, hypotheses, next actions and approvals for the week. Use when B2B ads, landing pages, CRM data or sales notes show a lead quality problem that needs a decision before campaign, scoring or follow-up changes.
+description: Summarizes facts, hypotheses, next actions and approvals for the week. Use at the end of a reporting week, or when someone needs one page on what happened and what needs approval.
 ---
 
 # Weekly B2B Lead Gen Readout
@@ -54,7 +54,7 @@ End with:
 
 User: "Here are CRM stages, source data and sales notes for weekly b2b lead gen readout. What should we change before the next campaign move?"
 
-Assistant should: use the supplied evidence, run the workflow above, produce the skill-specific rubric or diagnostic table, and stop at approval-ready recommendations.
+Assistant should: separate facts from hypotheses, name what needs approval, and stop at one page the owner can act on.
 
 ## Guardrails
 

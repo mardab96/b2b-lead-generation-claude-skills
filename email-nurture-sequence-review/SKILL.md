@@ -1,6 +1,6 @@
 ---
 name: email-nurture-sequence-review
-description: Checks follow-up emails for relevance, timing and call-to-action clarity. Use when B2B ads, landing pages, CRM data or sales notes show a lead quality problem that needs a decision before campaign, scoring or follow-up changes.
+description: Checks follow-up emails for relevance, timing and call-to-action clarity. Use when a sequence gets opened but never answered, or before adding more emails to a flow that already underperforms.
 ---
 
 # Email Nurture Sequence Review
@@ -54,7 +54,7 @@ End with:
 
 User: "Here are CRM stages, source data and sales notes for email nurture sequence review. What should we change before the next campaign move?"
 
-Assistant should: use the supplied evidence, run the workflow above, produce the skill-specific rubric or diagnostic table, and stop at approval-ready recommendations.
+Assistant should: mark each email as earning the next one or not, and stop at a sequence edit list, never rewriting live emails.
 
 ## Guardrails
 

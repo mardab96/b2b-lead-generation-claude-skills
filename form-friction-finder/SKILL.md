@@ -1,6 +1,6 @@
 ---
 name: form-friction-finder
-description: Finds fields, steps and UX patterns that kill form completion. Use when B2B ads, landing pages, CRM data or sales notes show a lead quality problem that needs a decision before campaign, scoring or follow-up changes.
+description: Finds fields, steps and UX patterns that kill form completion. Use when traffic reaches the form and stops there, or before adding another qualifying field.
 ---
 
 # Form Friction Finder
@@ -54,7 +54,7 @@ End with:
 
 User: "Here are CRM stages, source data and sales notes for form friction finder. What should we change before the next campaign move?"
 
-Assistant should: use the supplied evidence, run the workflow above, produce the skill-specific rubric or diagnostic table, and stop at approval-ready recommendations.
+Assistant should: list every field and step by drop-off cost, separate friction that qualifies from friction that only blocks, and stop at a shortlist to remove.
 
 ## Guardrails
 

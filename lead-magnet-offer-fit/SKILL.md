@@ -1,6 +1,6 @@
 ---
 name: lead-magnet-offer-fit
-description: Reviews a proposed or existing B2B lead magnet for buyer-stage fit, pain relevance, qualification strength and follow-up value. Use when B2B ads, landing pages, CRM data or sales notes show a lead quality problem that needs a decision before campaign, scoring or follow-up changes.
+description: Reviews a proposed or existing B2B lead magnet for buyer-stage fit, pain relevance, qualification strength and follow-up value. Use before building a new lead magnet, or when downloads are high and nothing moves after them.
 ---
 
 # Lead Magnet Offer Fit
@@ -55,7 +55,7 @@ End with:
 
 User: "Here are CRM stages, source data and sales notes for lead magnet offer fit. What should we change before the next campaign move?"
 
-Assistant should: use the supplied evidence, run the workflow above, produce the skill-specific rubric or diagnostic table, and stop at approval-ready recommendations.
+Assistant should: score the magnet on buyer stage, pain relevance, qualification strength and follow-up value, and stop at keep, rework or drop.
 
 ## Guardrails
 

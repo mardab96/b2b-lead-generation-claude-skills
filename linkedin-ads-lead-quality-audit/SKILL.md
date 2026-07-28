@@ -1,6 +1,6 @@
 ---
 name: linkedin-ads-lead-quality-audit
-description: Diagnoses LinkedIn campaign quality using CRM feedback and cost per qualified lead. Use when B2B ads, landing pages, CRM data or sales notes show a lead quality problem that needs a decision before campaign, scoring or follow-up changes.
+description: Diagnoses LinkedIn campaign quality using CRM feedback and cost per qualified lead. Use when LinkedIn cost per lead looks acceptable and sales disagrees, or before scaling a LinkedIn lead-gen form.
 ---
 
 # Linkedin Ads Lead Quality Audit
@@ -54,7 +54,7 @@ End with:
 
 User: "Here are CRM stages, source data and sales notes for linkedin ads lead quality audit. What should we change before the next campaign move?"
 
-Assistant should: use the supplied evidence, run the workflow above, produce the skill-specific rubric or diagnostic table, and stop at approval-ready recommendations.
+Assistant should: pair campaign data with CRM feedback, report cost per qualified lead rather than cost per lead, and stop at scale, fix or pause.
 
 ## Guardrails
 

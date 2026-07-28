@@ -1,6 +1,6 @@
 ---
 name: lead-scoring-sanity-check
-description: Tests B2B lead scoring rules against real CRM outcomes, sales feedback, qualification stages and revenue signals. Use when B2B ads, landing pages, CRM data or sales notes show a lead quality problem that needs a decision before campaign, scoring or follow-up changes.
+description: Tests B2B lead scoring rules against real CRM outcomes, sales feedback, qualification stages and revenue signals. Use when high scores stop predicting closed deals, or before letting scoring decide routing.
 ---
 
 # Lead Scoring Sanity Check
@@ -68,7 +68,7 @@ End with:
 
 User: "Here are CRM stages, source data and sales notes for lead scoring sanity check. What should we change before the next campaign move?"
 
-Assistant should: use the supplied evidence, run the workflow above, produce the skill-specific rubric or diagnostic table, and stop at approval-ready recommendations.
+Assistant should: test each scoring rule against real outcomes, name the rules that predict nothing, and stop at a revised scoring model for approval.
 
 ## Guardrails
 

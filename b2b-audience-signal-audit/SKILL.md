@@ -1,6 +1,6 @@
 ---
 name: b2b-audience-signal-audit
-description: Reviews targeting signals for job titles, industries, intent and exclusions. Use when B2B ads, landing pages, CRM data or sales notes show a lead quality problem that needs a decision before campaign, scoring or follow-up changes.
+description: Reviews targeting signals for job titles, industries, intent and exclusions. Use when the wrong job titles keep filling the form, or before widening targeting on a campaign that already brings mixed leads.
 ---
 
 # B2B Audience Signal Audit
@@ -54,7 +54,7 @@ End with:
 
 User: "Here are CRM stages, source data and sales notes for b2b audience signal audit. What should we change before the next campaign move?"
 
-Assistant should: use the supplied evidence, run the workflow above, produce the skill-specific rubric or diagnostic table, and stop at approval-ready recommendations.
+Assistant should: score each targeting signal against who actually closes, flag the exclusions that are missing, and stop at a targeting change list awaiting approval.
 
 ## Guardrails
 

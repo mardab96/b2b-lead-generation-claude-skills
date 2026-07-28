@@ -1,6 +1,6 @@
 ---
 name: crm-lead-source-quality-audit
-description: Ranks lead sources by downstream stage, value and close rate. Use when B2B ads, landing pages, CRM data or sales notes show a lead quality problem that needs a decision before campaign, scoring or follow-up changes.
+description: Ranks lead sources by downstream stage, value and close rate. Use when two channels look equally good on cost per lead, or before moving budget between sources.
 ---
 
 # CRM Lead Source Quality Audit
@@ -54,7 +54,7 @@ End with:
 
 User: "Here are CRM stages, source data and sales notes for crm lead source quality audit. What should we change before the next campaign move?"
 
-Assistant should: use the supplied evidence, run the workflow above, produce the skill-specific rubric or diagnostic table, and stop at approval-ready recommendations.
+Assistant should: rank sources by what happened downstream rather than by cost per lead, and stop at a budget reallocation the owner can approve.
 
 ## Guardrails
 

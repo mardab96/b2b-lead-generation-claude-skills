@@ -1,6 +1,6 @@
 ---
 name: sales-follow-up-speed-audit
-description: Measures response time impact on qualification and conversion. Use when B2B ads, landing pages, CRM data or sales notes show a lead quality problem that needs a decision before campaign, scoring or follow-up changes.
+description: Measures response time impact on qualification and conversion. Use when leads go cold between form fill and first contact, or when nobody knows how fast follow-up actually happens.
 ---
 
 # Sales Follow Up Speed Audit
@@ -54,7 +54,7 @@ End with:
 
 User: "Here are CRM stages, source data and sales notes for sales follow up speed audit. What should we change before the next campaign move?"
 
-Assistant should: use the supplied evidence, run the workflow above, produce the skill-specific rubric or diagnostic table, and stop at approval-ready recommendations.
+Assistant should: measure real time to first contact against conversion, and stop at a routing or staffing change, not a lecture on speed.
 
 ## Guardrails
 

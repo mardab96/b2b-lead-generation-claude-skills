@@ -1,6 +1,6 @@
 ---
 name: icp-reality-check
-description: Compares your stated ICP against actual closed-won and closed-lost customers. Use when B2B ads, landing pages, CRM data or sales notes show a lead quality problem that needs a decision before campaign, scoring or follow-up changes.
+description: Compares your stated ICP against actual closed-won and closed-lost customers. Use before writing new targeting or messaging, or when the customers you actually close look nothing like the ICP on the slide.
 ---
 
 # Icp Reality Check
@@ -69,7 +69,7 @@ End with:
 
 User: "Here are CRM stages, source data and sales notes for icp reality check. What should we change before the next campaign move?"
 
-Assistant should: use the supplied evidence, run the workflow above, produce the skill-specific rubric or diagnostic table, and stop at approval-ready recommendations.
+Assistant should: put the stated ICP next to closed-won and closed-lost reality, name where they diverge, and stop at a corrected ICP the owner can sign off.
 
 ## Guardrails
 

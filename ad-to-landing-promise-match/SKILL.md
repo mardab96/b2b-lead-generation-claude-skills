@@ -1,6 +1,6 @@
 ---
 name: ad-to-landing-promise-match
-description: Verifies that ads, landing page and CTA promise the same thing. Use when B2B ads, landing pages, CRM data or sales notes show a lead quality problem that needs a decision before campaign, scoring or follow-up changes.
+description: Verifies that ads, landing page and CTA promise the same thing. Use when click-through looks fine but the page converts badly, or when leads arrive confused about what was offered.
 ---
 
 # Ad To Landing Promise Match
@@ -54,7 +54,7 @@ End with:
 
 User: "Here are CRM stages, source data and sales notes for ad to landing promise match. What should we change before the next campaign move?"
 
-Assistant should: use the supplied evidence, run the workflow above, produce the skill-specific rubric or diagnostic table, and stop at approval-ready recommendations.
+Assistant should: line up the ad promise, the page headline and the CTA side by side, name every mismatch, and stop at a rewrite brief the owner can approve.
 
 ## Guardrails
 

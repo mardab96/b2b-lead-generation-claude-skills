@@ -1,6 +1,6 @@
 ---
 name: landing-page-qualification-review
-description: Diagnoses whether the page attracts the right leads or just more leads. Use when B2B ads, landing pages, CRM data or sales notes show a lead quality problem that needs a decision before campaign, scoring or follow-up changes.
+description: Diagnoses whether the page attracts the right leads or just more leads. Use when the page fills the pipeline with the wrong people, or before sending paid traffic to it.
 ---
 
 # Landing Page Qualification Review
@@ -54,7 +54,7 @@ End with:
 
 User: "Here are CRM stages, source data and sales notes for landing page qualification review. What should we change before the next campaign move?"
 
-Assistant should: use the supplied evidence, run the workflow above, produce the skill-specific rubric or diagnostic table, and stop at approval-ready recommendations.
+Assistant should: judge the page on who it filters out, not on who it attracts, and stop at the qualification changes worth testing.
 
 ## Guardrails
 

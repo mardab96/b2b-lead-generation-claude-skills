@@ -1,6 +1,6 @@
 ---
 name: proposal-win-loss-review
-description: Learns from won and lost deals to fix upstream targeting and messaging. Use when B2B ads, landing pages, CRM data or sales notes show a lead quality problem that needs a decision before campaign, scoring or follow-up changes.
+description: Learns from won and lost deals to fix upstream targeting and messaging. Use after a run of losses that feel similar, or when you keep reaching proposal stage with people who never buy.
 ---
 
 # Proposal Win Loss Review
@@ -54,7 +54,7 @@ End with:
 
 User: "Here are CRM stages, source data and sales notes for proposal win loss review. What should we change before the next campaign move?"
 
-Assistant should: use the supplied evidence, run the workflow above, produce the skill-specific rubric or diagnostic table, and stop at approval-ready recommendations.
+Assistant should: find the pattern the losses share, trace it upstream to targeting or messaging, and stop at what to change before the next proposal.
 
 ## Guardrails
 

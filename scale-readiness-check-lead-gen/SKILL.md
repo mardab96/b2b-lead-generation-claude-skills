@@ -1,6 +1,6 @@
 ---
 name: scale-readiness-check-lead-gen
-description: Decides if you should add budget or fix qualification and follow-up first. Use when B2B ads, landing pages, CRM data or sales notes show a lead quality problem that needs a decision before campaign, scoring or follow-up changes.
+description: Decides if you should add budget or fix qualification and follow-up first. Use before increasing budget, or when someone asks whether the problem is spend or qualification.
 ---
 
 # Scale Readiness Check Lead Gen
@@ -54,7 +54,7 @@ End with:
 
 User: "Here are CRM stages, source data and sales notes for scale readiness check lead gen. What should we change before the next campaign move?"
 
-Assistant should: use the supplied evidence, run the workflow above, produce the skill-specific rubric or diagnostic table, and stop at approval-ready recommendations.
+Assistant should: answer spend or qualification first with evidence, and stop at a clear go or hold on more budget.
 
 ## Guardrails
 
