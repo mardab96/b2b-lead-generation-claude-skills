@@ -1,6 +1,6 @@
 ---
 name: weekly-b2b-lead-gen-readout
-description: Summarizes facts, hypotheses, next actions and approvals for the week. Use at the end of a reporting week, or when someone needs one page on what happened and what needs approval.
+description: Summarizes facts, hypotheses, next actions and approvals for the week. Use when a reporting week ends, or when someone needs one page on what happened and what needs approval.
 ---
 
 # Weekly B2B Lead Gen Readout

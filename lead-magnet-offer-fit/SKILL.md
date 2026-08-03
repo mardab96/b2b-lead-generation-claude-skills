@@ -1,6 +1,6 @@
 ---
 name: lead-magnet-offer-fit
-description: Reviews a proposed or existing B2B lead magnet for buyer-stage fit, pain relevance, qualification strength and follow-up value. Use before building a new lead magnet, or when downloads are high and nothing moves after them.
+description: Reviews a proposed or existing B2B lead magnet for buyer-stage fit, pain relevance, qualification strength and follow-up value. Use when you are about to build a new lead magnet, or when downloads are high and nothing moves after them.
 ---
 
 # Lead Magnet Offer Fit

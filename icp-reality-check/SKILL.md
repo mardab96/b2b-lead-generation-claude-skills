@@ -1,6 +1,6 @@
 ---
 name: icp-reality-check
-description: Compares your stated ICP against actual closed-won and closed-lost customers. Use before writing new targeting or messaging, or when the customers you actually close look nothing like the ICP on the slide.
+description: Compares your stated ICP against actual closed-won and closed-lost customers. Use when you are about to write new targeting or messaging, or when the customers you actually close look nothing like the ICP on the slide.
 ---
 
 # Icp Reality Check

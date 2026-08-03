@@ -1,6 +1,6 @@
 ---
 name: sdr-handoff-brief-generator
-description: Produces context for sales: source, intent signals, likely objections, next question. Use before passing a lead to sales, or when reps start calls without knowing where the lead came from.
+description: Produces context for sales: source, intent signals, likely objections, next question. Use when you are passing a lead to sales, or when reps start calls without knowing where the lead came from.
 ---
 
 # SDR Handoff Brief Generator

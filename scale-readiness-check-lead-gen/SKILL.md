@@ -1,6 +1,6 @@
 ---
 name: scale-readiness-check-lead-gen
-description: Decides if you should add budget or fix qualification and follow-up first. Use before increasing budget, or when someone asks whether the problem is spend or qualification.
+description: Decides if you should add budget or fix qualification and follow-up first. Use when you are about to increase budget, or when someone asks whether the problem is spend or qualification.
 ---
 
 # Scale Readiness Check Lead Gen

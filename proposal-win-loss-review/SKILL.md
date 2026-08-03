@@ -1,6 +1,6 @@
 ---
 name: proposal-win-loss-review
-description: Learns from won and lost deals to fix upstream targeting and messaging. Use after a run of losses that feel similar, or when you keep reaching proposal stage with people who never buy.
+description: Learns from won and lost deals to fix upstream targeting and messaging. Use when a run of losses feels similar, or when you keep reaching proposal stage with people who never buy.
 ---
 
 # Proposal Win Loss Review
